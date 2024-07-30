@@ -245,7 +245,7 @@ export class ElabelComponent {
       }
 
       if(response.data.packages.length) {
-        this.form.get('packages').setValue(parseInt(response.data.packages[0].id))
+       this.form.get('packages').setValue(parseInt(response.data.packages[0].package_id))
       }
 
       if(response.data.sub_image) {
